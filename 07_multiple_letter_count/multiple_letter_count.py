@@ -1,4 +1,5 @@
 def multiple_letter_count(phrase):
+    return dict(phrase)
     """Return dict of {ltr: frequency} from phrase.
 
         >>> multiple_letter_count('yay')
