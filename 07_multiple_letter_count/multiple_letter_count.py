@@ -1,5 +1,12 @@
 def multiple_letter_count(phrase):
-    return dict(phrase)
+    new_dict = {}
+    for char in phrase:
+        keys = new_dict.keys()
+        if char in keys:
+            new_dict[char] += 1
+        else:
+            new_dict[char] = 1
+    return new_dict
     """Return dict of {ltr: frequency} from phrase.
 
         >>> multiple_letter_count('yay')
