@@ -1,8 +1,7 @@
 def multiple_letter_count(phrase):
     new_dict = {}
     for char in phrase:
-        keys = new_dict.keys()
-        if char in keys:
+        if char in new_dict.keys():
             new_dict[char] += 1
         else:
             new_dict[char] = 1
