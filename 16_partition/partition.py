@@ -1,4 +1,6 @@
 def partition(lst, fn):
+    return [[el for el in lst if fn(el) == True],[el for el in lst if fn(el) == False]]
+
     """Partition lst by predicate.
      
      - lst: list of items

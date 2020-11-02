@@ -1,4 +1,12 @@
 def mode(nums):
+    max = 1
+    max_num = 0
+    for num in nums:
+        if nums.count(num) >= max:
+            max +=1
+            max_num = num
+    return max_num
+
     """Return most-common number in list.
 
     For this function, there will always be a single-most-common value;
