@@ -1,4 +1,11 @@
 def vowel_count(phrase):
+    new_dict = {}
+    vowels = 'aeiou'
+    for char in phrase.lower():
+        if char in vowels:
+            new_dict[char] = new_dict.get(char, 0) + 1
+    return new_dict
+
     """Return frequency map of vowels, case-insensitive.
 
         >>> vowel_count('rithm school')
