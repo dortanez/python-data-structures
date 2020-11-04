@@ -1,4 +1,8 @@
 def sum_range(nums, start=0, end=None):
+    if end == None:
+        return sum(nums[start:end])
+    else: 
+        return sum(nums[start:end + 1])
     """Return sum of numbers from start...end.
 
     - start: where to start (if not provided, start at list start)

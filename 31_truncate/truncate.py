@@ -1,4 +1,14 @@
 def truncate(phrase, n):
+    if n < 3:
+        return 'Truncation must be at least 3 characters.'
+    if len(phrase) < n:
+        return phrase
+    string = ''
+    for char in phrase:
+        if len(string) <= n-4:
+            string += char
+    string += '...'
+    return string
     """Return truncated-at-n-chars version of  phrase.
     
     If the phrase is longer than, or the same size as, n make sure it ends with '...' and is no

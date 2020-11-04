@@ -1,4 +1,9 @@
 def two_oldest_ages(ages):
+    new_tup = ()
+    sorted_lst = ages.sort()
+    return (sorted_lst[-2],sorted_lst[-1])
+
+
     """Return two distinct oldest ages as tuple (second-oldest, oldest)..
 
         >>> two_oldest_ages([1, 2, 10, 8])
