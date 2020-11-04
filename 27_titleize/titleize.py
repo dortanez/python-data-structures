@@ -1,9 +1,5 @@
 def titleize(phrase):
-    lst = phrase.lower().split(' ')
-    string = ''
-    for el in lst:
-        string += el.capitalize()
-    return string
+    return ' '.join([word.capitalize() for word in phrase.split(' ')])
     """Return phrase in title case (each word capitalized).
 
         >>> titleize('this is awesome')
